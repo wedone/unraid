@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>baidupcs</Name>
+  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <Repository>leepop/baidupcs</Repository>
+  <Registry>https://hub.docker.com/r/leepop/baidupcs</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://hub.docker.com/r/leepop/baidupcs</Project>
+  <Overview>baidupcs</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5299]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disk1/appdata/baidupcs</HostDir>
+      <ContainerDir>/root/.config/BaiduPCS-Go</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>下载路径</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>5299</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>

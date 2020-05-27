@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>PyOne</Name>
+  <Repository>hongchenhao/pyone</Repository>
+  <Registry>https://hub.docker.com/r/hongchenhao/pyone</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/StarOz/docker-pyone</Project>
+  <Overview>pyone</Overview>
+  <Description>
+TZ：时区，默认Asia/Shanghai
+PORT：服务监听端口，默认为80
+DISABLE_REFRESH_CACHE：是否禁用crontab自动刷新缓存，设置任意值则不启用
+REFRESH_CACHE_NEW：使用crontab进行增量更新，默认*/15 * * * *，即每15分钟更新一次
+REFRESH_CACHE_ALL：使用crontab进行全量更新，默认0 3 */1 * *，即每天凌晨3点更新一次
+SSH_PASSWORD：sshd用户密码，用户名为root，若不设置则不启用sshd
+ARIA2_SECRET：aria2的rpc secret，默认aria2-secret
+HEALTHCHECK_INTERVAL：健康检查间隔周期，默认3秒。
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disk1/appdata/pyone</HostDir>
+      <ContainerDir>/root/PyOne</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>mongodb及aria2的配置文件及数据</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>sshd用户密码，用户名为root，若不设置则不启用sshd</Value>
+      <Name>SSH_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>aria2的rpc secret，默认aria2-secret</Value>
+      <Name>ARIA2_SECRET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>8090</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>

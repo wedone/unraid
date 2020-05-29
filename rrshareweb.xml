@@ -21,11 +21,6 @@
   <Description></Description>
   <Data>
     <Volume>
-      <HostDir>/mnt/disk1/appdata/rrshare</HostDir>
-      <ContainerDir>/rrshare</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
       <HostDir>下载路径</HostDir>
       <ContainerDir>/opt/work/store</ContainerDir>
       <Mode>rw</Mode>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>人人影视</Name>
+  <Name>rrshare</Name>
   <Icon>https://img4.orsoon.com/ico/201905/29151058_d24a3fc8f1.png</Icon>
   <Repository>dreaminess/rrshareweb</Repository>
   <Registry>https://hub.docker.com/r/uscwifi/rrshare</Registry>

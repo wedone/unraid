@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>rrshareweb</Name>
-  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <Name>人人影视</Name>
+  <Icon>https://img4.orsoon.com/ico/201905/29151058_d24a3fc8f1.png</Icon>
   <Repository>auska/docker-rrshareweb</Repository>
   <Registry>https://hub.docker.com/r/auska/docker-rrshareweb</Registry>
   <Network>host</Network>

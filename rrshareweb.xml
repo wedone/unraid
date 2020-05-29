@@ -2,7 +2,7 @@
 <Container>
   <Name>rrshare</Name>
   <Icon>https://img4.orsoon.com/ico/201905/29151058_d24a3fc8f1.png</Icon>
-  <Repository>dreaminess/rrshareweb</Repository>
+  <Repository>uscwifi/rrshare</Repository>
   <Registry>https://hub.docker.com/r/uscwifi/rrshare</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>

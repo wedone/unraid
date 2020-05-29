@@ -2,13 +2,13 @@
 <Container>
   <Name>人人影视</Name>
   <Icon>https://img4.orsoon.com/ico/201905/29151058_d24a3fc8f1.png</Icon>
-  <Repository>auska/docker-rrshareweb</Repository>
-  <Registry>https://hub.docker.com/r/auska/docker-rrshareweb</Registry>
+  <Repository>dreaminess/rrshareweb</Repository>
+  <Registry>https://hub.docker.com/r/uscwifi/rrshare</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
   <Support></Support>
-  <Project>https://hub.docker.com/r/auska/docker-rrshareweb</Project>
-  <Overview>rrshareweb</Overview>
+  <Project>https://github.com/uscwifi/docker-repos</Project>
+  <Overview>rrshare</Overview>
   <Description>
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
@@ -34,16 +34,6 @@
   <Environment>
     <Variable>
       <Value>3001</Value>
-      <Name>PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>30210</Value>
-      <Name>PORT</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>6714</Value>
       <Name>PORT</Name>
       <Mode/>
     </Variable>

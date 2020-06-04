@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>qBittorrent</Name>
+  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/qbittorrent-icon.png</Icon>
+  <Repository>auska/docker-qbittorrent</Repository>
+  <Registry>https://hub.docker.com/r/auska/docker-qbittorrent</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://www.github.com/Auska/docker-qBittorrent</Project>
+  <Overview>qbittorrent</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8989]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>配置文件目录</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>下载文件目录</HostDir>
+      <ContainerDir>/mnt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>监视种子目录</HostDir>
+      <ContainerDir>/watch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Container>

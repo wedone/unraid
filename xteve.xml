@@ -4,7 +4,7 @@
   <Icon>https://xteve.de/img/tv_200x200.png</Icon>
   <Repository>tnwhitwell/xteve</Repository>
   <Registry>https://hub.docker.com/r/tnwhitwell/xteve</Registry>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
   <Support></Support>
   <Project>https://github.com/whi-tw/docker-xteve</Project>
@@ -31,4 +31,14 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Networking>
+  <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>34400</HostPort>
+        <ContainerPort>34400</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
 </Container>

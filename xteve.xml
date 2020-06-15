@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>xTeVe</Name>
+  <Icon>https://xteve.de/img/tv_200x200.png</Icon>
+  <Repository>tnwhitwell/xteve</Repository>
+  <Registry>https://hub.docker.com/r/tnwhitwell/xteve</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/whi-tw/docker-xteve</Project>
+  <Overview>xTeVe</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:34400]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>配置文件目录</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/tmp/xteve</HostDir>
+      <ContainerDir>/tmp/xteve</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+</Container>

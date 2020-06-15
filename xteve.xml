@@ -12,7 +12,7 @@
   <Description>
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:34400]</WebUI>
+  <WebUI>http://[IP]:[PORT:34400]/web</WebUI>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled></DateInstalled>

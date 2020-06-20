@@ -4,8 +4,7 @@
   <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/qbittorrent-icon.png</Icon>
   <Repository>auska/docker-qbittorrent</Repository>
   <Registry>https://hub.docker.com/r/auska/docker-qbittorrent</Registry>
-  <Network>host</Network>
-  <Privileged>false</Privileged>
+   <Privileged>false</Privileged>
   <Support></Support>
   <Project>https://www.github.com/Auska/docker-qBittorrent</Project>
   <Overview>qbittorrent</Overview>
@@ -36,4 +35,21 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Networking>
+  <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8989</HostPort>
+        <ContainerPort>8989</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+    <Publish>
+      <Port>
+        <HostPort>8999</HostPort>
+        <ContainerPort>8999</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
 </Container>

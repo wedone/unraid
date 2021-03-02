@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
   <Name>Portainer</Name>
-  <Icon>https://avatars1.githubusercontent.com/u/22225832?s=400&v=4</Icon>
+  <Icon></Icon>
   <Repository>portainer/portainer</Repository>
   <Registry>https://hub.docker.com/r/portainer/portainer</Registry>
    <Privileged>false</Privileged>

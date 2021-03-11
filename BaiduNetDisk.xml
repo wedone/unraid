@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>BaiduNetDisk</Name>
+  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <Repository>johnshine/baidunetdisk-crossover-vnc</Repository>
+  <Registry>https://hub.docker.com/r/johnshine/baidunetdisk-crossover-vnc</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/john-shine/Docker-CodeWeavers_CrossOver-VNC</Project>
+  <Overview>BaiduNetDisk</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5901]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>下载路径</HostDir>
+      <ContainerDir>/home/baidu/baidunetdiskdownload/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>5901</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>

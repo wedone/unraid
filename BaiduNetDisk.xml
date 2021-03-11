@@ -1,46 +1,62 @@
 <?xml version="1.0"?>
-<Container>
+<Container version="2">
   <Name>BaiduNetDisk</Name>
-  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
-  <Repository>johnshine/baidunetdisk-crossover-vnc</Repository>
-  <Registry>https://hub.docker.com/r/johnshine/baidunetdisk-crossover-vnc</Registry>
+  <Repository>johngong/baidunetdisk:latest</Repository>
+  <Registry>https://hub.docker.com/r/johngong/baidunetdisk</Registry>
   <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support></Support>
-  <Project>https://github.com/john-shine/Docker-CodeWeavers_CrossOver-VNC</Project>
-  <Overview>BaiduNetDisk</Overview>
-  <Description>
-  </Description>
+  <Support/>
+  <Project>https://github.com/gshang2017/docker</Project>
+  <Overview>&#xD;
+  </Overview>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI></WebUI>
-  <PostArgs></PostArgs>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <WebUI>http://[IP]:[PORT:5800]</WebUI>
+  <ExtraParams/>
+  <PostArgs/>
   <CPUset/>
   <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description></Description>
-  <Data>
-    <Volume>
-      <HostDir>下载路径</HostDir>
-      <ContainerDir>/home/baidu/baidunetdiskdownload/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
+  <Description>
+  </Description>
   <Networking>
-  <Mode>bridge</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>5901</HostPort>
-        <ContainerPort>5901</ContainerPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5800</HostPort>
+        <ContainerPort>5800</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
+  <Data>
+    <Volume>
+      <HostDir>下载路径</HostDir>
+      <ContainerDir>/config/baidunetdiskdownload</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>配置路径</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   <Environment>
     <Variable>
-      <Value>VNC登陆密码</Value>
-      <Name>vnc_password</Name>
+      <Value>登陆密码</Value>
+      <Name>VNC_PASSWORD</Name>
       <Mode/>
     </Variable>
   </Environment>
+  <Labels/>
 </Container>

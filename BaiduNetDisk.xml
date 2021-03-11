@@ -12,7 +12,7 @@
   <Description>
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:5901]</WebUI>
+  <WebUI></WebUI>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled></DateInstalled>
@@ -26,10 +26,20 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Networking>
+  <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5901</HostPort>
+        <ContainerPort>5901</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
   <Environment>
     <Variable>
-      <Value>5901</Value>
-      <Name>PORT</Name>
+      <Value>VNC登陆密码</Value>
+      <Name>vnc_password</Name>
       <Mode/>
     </Variable>
   </Environment>

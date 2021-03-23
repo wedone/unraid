@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>z2m</Name>
+  <Icon>https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png</Icon>
+  <Repository>koenkk/zigbee2mqtt:latest</Repository>
+  <Registry>https://hub.docker.com/r/koenkk/zigbee2mqtt</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://www.zigbee2mqtt.io/</Project>
+  <Overview>z2m</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8880]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>数据保存目录</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/run/udev</HostDir>
+      <ContainerDir>/run/udev</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+  <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8880</HostPort>
+        <ContainerPort>8880</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+</Container>

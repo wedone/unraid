@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container>
-  <Name>z2m</Name>
+  <Name>Z2M</Name>
   <Icon>https://github.com/Koenkk/zigbee2mqtt/raw/master/images/logo.png</Icon>
   <Repository>koenkk/zigbee2mqtt:latest</Repository>
   <Registry>https://hub.docker.com/r/koenkk/zigbee2mqtt</Registry>

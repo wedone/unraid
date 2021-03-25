@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>jd_scripts</Name>
+  <Icon>https://gitee.com/lxk0301/jd_docker/blob/master/docker/bot/jd.png</Icon>
+  <Repository> lxk0301/jd_scripts:latest</Repository>
+  <Registry>https://hub.docker.com/r/lxk0301/jd_scripts</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://gitee.com/lxk0301/jd_docker</Project>
+  <Overview>jd_scripts</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5678]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>日志保存目录</HostDir>
+      <ContainerDir>/scripts/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Networking>
+  <Mode>host/Mode>
+    <Publish>
+      <Port>
+        <HostPort>5678</HostPort>
+        <ContainerPort>5678</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+</Container>

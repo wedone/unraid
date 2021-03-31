@@ -12,7 +12,7 @@
   <Description>
   </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
-  <WebUI>http://[IP]:[PORT:5678]</WebUI>
+  <WebUI>http://[IP]:[PORT:6789]</WebUI>
   <PostArgs></PostArgs>
   <CPUset/>
   <DateInstalled></DateInstalled>
@@ -149,7 +149,7 @@
     </Variable>
   </Environment>
   <Networking>
-  <Mode>bridge/Mode>
+     <Mode>bridge/Mode>
      <Publish>
        <Port>
          <HostPort>6789</HostPort>
@@ -158,4 +158,5 @@
        </Port>
      </Publish>
   </Networking>
+  <Labels/>
 </Container>

@@ -47,7 +47,7 @@
       <Name>JD_BEAN_SIGN_STOP_NOTIFY</Name>
       <Mode/>
     </Variable>
-     <Variable>
+    <Variable>
       <Value>false</Value>
       <Name>JD_BEAN_SIGN_NOTIFY_SIMPLE</Name>
       <Mode/>

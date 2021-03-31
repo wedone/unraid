@@ -149,13 +149,13 @@
     </Variable>
   </Environment>
   <Networking>
-  <Mode>bridge/Mode>
-    <Publish>
-      <Port>
-        <HostPort>6789</HostPort>
-        <ContainerPort>5678</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
+   <Mode>bridge/Mode>
+     <Publish>
+       <Port>
+         <HostPort>6789</HostPort>
+         <ContainerPort>5678</ContainerPort>
+         <Protocol>tcp</Protocol>
+       </Port>
+     </Publish>
+   </Networking>
 </Container>

@@ -157,5 +157,5 @@
          <Protocol>tcp</Protocol>
        </Port>
      </Publish>
-   </Networking>
+  </Networking>
 </Container>

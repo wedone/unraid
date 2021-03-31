@@ -149,7 +149,7 @@
     </Variable>
   </Environment>
   <Networking>
-   <Mode>bridge/Mode>
+  <Mode>bridge/Mode>
      <Publish>
        <Port>
          <HostPort>6789</HostPort>

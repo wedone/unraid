@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
   <Name>jd_scripts</Name>
-  <Icon>https://gitee.com/lxk0301/jd_docker/blob/master/docker/bot/jd.png</Icon>
+  <Icon>https://gitee.com/lxk0301/jd_docker/raw/master/docker/bot/jd.png</Icon>
   <Repository>lxk0301/jd_scripts:latest</Repository>
   <Registry>https://hub.docker.com/r/lxk0301/jd_scripts</Registry>
   <Network>host</Network>
@@ -145,9 +145,14 @@
       <Name>JD_JXD_EXCHANGE</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>ENABLE_AUTO_HELP</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+  <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>6789</HostPort>

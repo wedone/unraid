@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>HomeAssistant</Name>
+  <Repository>homeassistant/home-assistant:stable</Repository>
+  <Registry>https://registry.hub.docker.com/r/homeassistant/home-assistant/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://home-assistant.io/help/</Support>
+  <Project>https://home-assistant.io</Project>
+  <Overview>Home Assistant Core is the core of the Home Assistant home automation platform. It focuses on local control and privacy. Track and control all devices at home and automate control.</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI>https://[IP]:[PORT:8123]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/balloob/unraid-docker-templates/master/balloob/home-assistant-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1616599460</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Home Assistant Core is the core of the Home Assistant home automation platform. It focuses on local control and privacy. Track and control all devices at home and automate control.</Description>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8123</HostPort>
+        <ContainerPort>8123</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>配置目录</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="配置目录" Target="/config" Default="/mnt/cache/app_config/home-assistant" Mode="rw" Description="This path is where Home Assistant will store it's configuration files." Type="Path" Display="always" Required="true" Mask="false">配置目录</Config>
+  <Config Name="Host Port 1" Target="8123" Default="8123" Mode="tcp" Description="&#x5BB9;&#x5668; Port: " Type="Port" Display="always" Required="false" Mask="false">8123</Config>
+</Container>

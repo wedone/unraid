@@ -2,7 +2,7 @@
 <Container>
   <Name>jd_scripts</Name>
   <Icon>https://gitee.com/lxk0301/jd_docker/blob/master/docker/bot/jd.png</Icon>
-  <Repository> lxk0301/jd_scripts:latest</Repository>
+  <Repository>lxk0301/jd_scripts:latest</Repository>
   <Registry>https://hub.docker.com/r/lxk0301/jd_scripts</Registry>
   <Network>host</Network>
   <Privileged>false</Privileged>
@@ -26,7 +26,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-    <Environment>
+  <Environment>
     <Variable>
       <Value>jd cookies</Value>
       <Name>JD_COOKIE</Name>

@@ -9,8 +9,6 @@
   <Support></Support>
   <Project>https://gitee.com/lxk0301/jd_docker</Project>
   <Overview>jd_scripts</Overview>
-  <Description>
-  </Description>
   <Category>Cloud: Network:Web Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:6789]</WebUI>
   <PostArgs></PostArgs>
@@ -149,14 +147,14 @@
     </Variable>
   </Environment>
   <Networking>
-     <Mode>bridge/Mode>
-     <Publish>
-       <Port>
-         <HostPort>6789</HostPort>
-         <ContainerPort>5678</ContainerPort>
-         <Protocol>tcp</Protocol>
-       </Port>
-     </Publish>
+    <Mode>bridge/Mode>
+    <Publish>
+      <Port>
+        <HostPort>6789</HostPort>
+        <ContainerPort>5678</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
   </Networking>
   <Labels/>
 </Container>

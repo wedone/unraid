@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container>
+  <Name>AVDC-API</Name>
+  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <Repository>xjasonlyu/avdc-api:latest</Repository>
+  <Registry>https://hub.docker.com/r/xjasonlyu/avdc-api</Registry>
+  <Network>host</Network>
+  <Privileged>false</Privileged>
+  <Support></Support>
+  <Project>https://github.com/xjasonlyu/jellyfin-plugin-avdc</Project>
+  <Overview>avdc-api</Overview>
+  <Description>
+  </Description>
+  <Category>Cloud: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <PostArgs></PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description></Description>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/disk1/appdata/avdc-api/avdc.db</HostDir>
+      <ContainerDir>$PWD/avdc.db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>5000</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+</Container>

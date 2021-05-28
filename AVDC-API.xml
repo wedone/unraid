@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container>
   <Name>AVDC-API</Name>
-  <Icon>https://bkimg.cdn.bcebos.com/pic/adaf2edda3cc7cd9d4a517563301213fb90e91b0?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5</Icon>
+  <Icon>https://raw.githubusercontent.com/xjasonlyu/jellyfin-plugin-avdc/main/tg-qrcode.png</Icon>
   <Repository>xjasonlyu/avdc-api:latest</Repository>
   <Registry>https://hub.docker.com/r/xjasonlyu/avdc-api</Registry>
   <Network>host</Network>
@@ -21,8 +21,8 @@
   <Description></Description>
   <Data>
     <Volume>
-      <HostDir>/mnt/disk1/appdata/avdc-api/avdc.db</HostDir>
-      <ContainerDir>$PWD/avdc.db</ContainerDir>
+      <HostDir>avdc.db文件路径</HostDir>
+      <ContainerDir>/avdc.db</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>

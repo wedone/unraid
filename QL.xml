@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1623809133</DateInstalled>
+  <DateInstalled>1623809306</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -65,5 +65,5 @@
   <Config Name="db" Target="/ql/db" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/db" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk1/appdata/QL/db</Config>
   <Config Name="scripts" Target="/ql/scripts" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/scripts" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk1/appdata/QL/scripts</Config>
   <Config Name="jbot" Target="/ql/jbot" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /ql/jbot" Type="Path" Display="always" Required="false" Mask="false">/mnt/disk1/appdata/QL/jbot</Config>
-  <Config Name="Host Port 1" Target="5700" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5700" Type="Port" Display="always" Required="false" Mask="false">5700</Config>
+  <Config Name="port" Target="5700" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 5700" Type="Port" Display="always" Required="false" Mask="false">5700</Config>
 </Container>
